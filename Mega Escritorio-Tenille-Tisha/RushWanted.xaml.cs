@@ -20,21 +20,40 @@ namespace Mega_Escritorio_Tenille_Tisha
     /// </summary>
     public partial class RushWanted : Page
     {
+        string rushWantedSelected;
+
         public RushWanted()
         {
             InitializeComponent();
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            //if(radio_button = "Yes") {
+            if(rushWantedSelected == "Yes") {
             // View RushOrderOptions.xaml  
             RushOrderOptions rushOrderPage = new RushOrderOptions();
             this.NavigationService.Navigate(rushOrderPage);
-            //} else {
+            } else
+            {
             // View OrderSummaryPage.xaml  
-            //OrderSummaryPage orderSummary = new OrderSummaryPage();
-            //this.NavigationService.Navigate(orderSummary);
-            //}
+            OrderSummaryPage orderSummary = new OrderSummaryPage();
+            this.NavigationService.Navigate(orderSummary);
+            }
+        }
+
+        private void rushWanted_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (radioButton.IsChecked == true)
+            {
+                rushWantedSelected = "Yes";
+            }
+            else if (radioButton1.IsChecked == true)
+            {
+                rushWantedSelected = "No";
+            }
+            else
+            {
+                MessageBox.Show("Please make a selection!");
+            }
         }
     }
 }

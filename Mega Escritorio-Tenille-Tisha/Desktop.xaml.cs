@@ -20,6 +20,11 @@ namespace Mega_Escritorio_Tenille_Tisha
     /// </summary>
     public partial class Desktop : Page
     {
+        public double deskDimensions { get; set; }
+        public double dimensionPrice { get; set; }
+        public int length { get; set; }
+        public int widthSelected { get; set; }
+
         public Desktop()
         {
             InitializeComponent();
@@ -27,37 +32,88 @@ namespace Mega_Escritorio_Tenille_Tisha
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            calculateDimension();
             // View Drawers.xaml  
             Drawers drawersPage = new Drawers();
             this.NavigationService.Navigate(drawersPage);
         }
 
-        public static double calculateDimension()
+        public void calculateDimension()
         {
-            Console.WriteLine("Please enter a desk top length in inches:");
-            string lengthString = Console.ReadLine();
-            double deskLength = double.Parse(lengthString);
-
-            Console.WriteLine("Please enter a desk top width in inches:");
-            string widthString = Console.ReadLine();
-            double deskWidth = double.Parse(widthString);
-
-            double deskDimensions = deskLength * deskWidth;
+            double deskDimensions = length * widthSelected;
             Console.WriteLine("Total desk top area: " + deskDimensions);
-
-            return deskDimensions;
+            calculateDimensionPrice(deskDimensions);
         }
-        public static double calculateDimensionPrice(double deskDimensions)
+        public void calculateDimensionPrice(double deskDimension)
         {
-            double dimensionPrice = 0;
-
-            if (deskDimensions > 1000)
+            dimensionPrice = 0;
+            if (deskDimension > 1000)
             {
-                deskDimensions = deskDimensions - 1000;
+                deskDimensions = deskDimension - 1000;
                 dimensionPrice = deskDimensions * 5;
             }
+        }
 
-            return dimensionPrice;
+        private void comboBox_Loaded1(object sender, RoutedEventArgs e)
+        {
+            // Drop down List.
+            List<int> data = new List<int>();
+            data.Add(10);
+            data.Add(20);
+            data.Add(30);
+            data.Add(40);
+            data.Add(50);
+            data.Add(60);
+            data.Add(70);
+
+            // Get the ComboBox reference.
+            var comboBox = sender as ComboBox;
+
+            // Assign the ItemsSource to the List.
+            comboBox.ItemsSource = data;
+
+            // Makes the first item selected.
+            comboBox.SelectedIndex = 0;
+        }
+
+        private void comboBox_SelectionChanged1(object sender, SelectionChangedEventArgs e)
+        {
+            // Get the ComboBox.
+            var comboBox = sender as ComboBox;
+
+            // Set SelectedItem as Window Title.
+            length = int.Parse(comboBox.SelectedItem.ToString());
+            this.Title = "Selected: " + length;
+        }
+
+        private void comboBox_Loaded2(object sender, RoutedEventArgs e)
+        {
+            // Drop down List.
+            List<int> data = new List<int>();
+            data.Add(10);
+            data.Add(20);
+            data.Add(30);
+            data.Add(40);
+            data.Add(50);
+
+            // Get the ComboBox reference.
+            var comboBox = sender as ComboBox;
+
+            // Assign the ItemsSource to the List.
+            comboBox.ItemsSource = data;
+
+            // Makes the first item selected.
+            comboBox.SelectedIndex = 0;
+        }
+
+        private void comboBox_SelectionChanged2(object sender, SelectionChangedEventArgs e)
+        {
+            // Get the ComboBox.
+            var comboBox = sender as ComboBox;
+
+            // Set SelectedItem as Window Title.
+            widthSelected = int.Parse(comboBox.SelectedItem.ToString());
+            this.Title = "Selected: " + widthSelected;
         }
     }
 }

@@ -9,15 +9,15 @@
       Title="Drawers">
 
     <Grid>
-        <RadioButton x:Name="radioButton" Content="0" HorizontalAlignment="Left" Margin="316,125,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" Margin="316,145,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Left" Margin="316,165,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Left" Margin="316,185,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton4" Content="4" HorizontalAlignment="Left" Margin="316,205,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton5" Content="5" HorizontalAlignment="Left" Margin="316,225,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton6" Content="6" HorizontalAlignment="Left" Margin="316,245,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton7" Content="7" HorizontalAlignment="Left" Margin="316,265,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label" Content="How Many Drawers Would You Like Your Desk to Have?" HorizontalAlignment="Left" Margin="199,31,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="295,334,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBox x:Name="label" Text="How Many Drawers Would You Like Your Desk to Have?" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="100,73,0,0" VerticalAlignment="Top" Height="87" Width="504" FontSize="24" FontWeight="Bold" BorderThickness="0"/>
+        <RadioButton x:Name="radioButton" Content="0" HorizontalAlignment="Left" Margin="284,254,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" Margin="284,291,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Left" Margin="284,334,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Left" Margin="284,371,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton4" Content="4" HorizontalAlignment="Left" Margin="382,254,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton5" Content="5" HorizontalAlignment="Left" Margin="382,291,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton6" Content="6" HorizontalAlignment="Left" Margin="382,334,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton7" Content="7" HorizontalAlignment="Left" Margin="382,371,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="477,478,0,0" VerticalAlignment="Top" Width="116" Click="button_Click" Height="38" FontSize="16"/>
     </Grid>
 </Page>

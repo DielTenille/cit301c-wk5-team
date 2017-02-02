@@ -20,6 +20,9 @@ namespace Mega_Escritorio_Tenille_Tisha
     /// </summary>
     public partial class Drawers : Page
     {
+        int numDrawers;
+        int drawerSelectionPrice;
+
         public Drawers()
         {
             InitializeComponent();
@@ -27,32 +30,57 @@ namespace Mega_Escritorio_Tenille_Tisha
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            calculateDrawerPrice();
             // View RushWanted.xaml  
             RushWanted rushWantedPage = new RushWanted();
             this.NavigationService.Navigate(rushWantedPage);
         }
 
-        public static int calculateDrawerPrice()
+        public void calculateDrawerPrice()
         {
-            const int MIN_DRAWERS = 0;
-            const int MAX_DRAWERS = 7;
-            int numDrawers;
-
-            Console.WriteLine("Please enter the number of drawers you want your desk to have.");
-            do
-            {
-                string numDrawerString = Console.ReadLine();
-                numDrawers = int.Parse(numDrawerString);
-                if (numDrawers < MIN_DRAWERS || numDrawers > MAX_DRAWERS)
-                {
-                    Console.WriteLine("Please enter a number between 0 and 7.");
-                }
-            } while (numDrawers < MIN_DRAWERS || numDrawers > MAX_DRAWERS);
-
             int drawerPrice = 50;
-            int drawerSelectionPrice = drawerPrice * numDrawers;
+            drawerSelectionPrice = drawerPrice * numDrawers;
 
-            return drawerSelectionPrice;
+        }
+
+        private void drawerSelection_Click(object sender, RoutedEventArgs e)
+        {
+            if(radioButton.IsChecked == true)
+            {
+                numDrawers = 0;
+            }
+            else if (radioButton1.IsChecked == true)
+            {
+                numDrawers = 1;
+            }
+            else if (radioButton2.IsChecked == true)
+            {
+                numDrawers = 2;
+            }
+            else if (radioButton3.IsChecked == true)
+            {
+                numDrawers = 3;
+            }
+            else if (radioButton4.IsChecked == true)
+            {
+                numDrawers = 4;
+            }
+            else if (radioButton5.IsChecked == true)
+            {
+                numDrawers = 5;
+            }
+            else if (radioButton6.IsChecked == true)
+            {
+                numDrawers = 6;
+            }
+            else if (radioButton7.IsChecked == true)
+            {
+                numDrawers = 7;
+            } else
+            {
+                MessageBox.Show("Please make a selection!");
+            }
+
         }
     }
 }

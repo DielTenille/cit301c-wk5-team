@@ -20,6 +20,9 @@ namespace Mega_Escritorio_Tenille_Tisha
     /// </summary>
     public partial class DeskMaterials : Page
     {
+        public double materialSelectionPrice;
+        public int materialChosen;
+
         public DeskMaterials()
         {
             InitializeComponent();
@@ -27,41 +30,37 @@ namespace Mega_Escritorio_Tenille_Tisha
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            calculateMaterialPrice();
             // View Desktop.xaml  
             Desktop desktopPage = new Desktop();
             this.NavigationService.Navigate(desktopPage);
         }
-
-        public static double calculateMaterialPrice()
+        private void Load_Click(object sender, RoutedEventArgs e)
         {
-            const int MIN_NUM = 0;
-            const int MAX_NUM = 2;
+            if (oak.IsChecked == true)
+            {
+                materialChosen = 0;
+            } else if (laminate.IsChecked == true)
+            {
+                materialChosen = 1;
+            } else if (pine.IsChecked == true)
+            {
+                materialChosen = 2;
+            } else
+            {
+                MessageBox.Show("Please select a desk material!");
+            };
+            
+        }
 
+        public void calculateMaterialPrice()
+        {
             double[] materialTypePrice = new double[]
             {
                 200, 100, 50
-            };
-
-            string[] materialType = new string[]
-            {
-                "Oak", "Laminate", "Pine"
-            };
-
-            Console.WriteLine("Please choose a desk material by typing the associated number. \n 0 = " + materialType[0] + ", 1 = " + materialType[1] + ", 2 = " + materialType[2]);
-            int materialChosen;
-            do
-            {
-                string materialChosenString = Console.ReadLine();
-                materialChosen = int.Parse(materialChosenString);
-                if (materialChosen < MIN_NUM || materialChosen > MAX_NUM)
-                {
-                    Console.WriteLine("Please enter a number between 0 and 2.");
-                }
-            } while (materialChosen < MIN_NUM || materialChosen > MAX_NUM);
-
+            };                 
+           
             double materialSelectionPrice = materialTypePrice[materialChosen];
-
-            return materialSelectionPrice;
 
         }
     }

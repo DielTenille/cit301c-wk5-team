@@ -152,7 +152,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="desk-chair.png" />
+    <Resource Include="Images\desk-chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Antu_task-complete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\laminate-sample.jpg" />
+    <Resource Include="Images\oak_sample.jpg" />
+    <Resource Include="Images\pine-sample.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
