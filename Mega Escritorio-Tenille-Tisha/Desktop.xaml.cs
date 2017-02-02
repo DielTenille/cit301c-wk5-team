@@ -58,13 +58,19 @@ namespace Mega_Escritorio_Tenille_Tisha
         {
             // Drop down List.
             List<int> data = new List<int>();
-            data.Add(10);
-            data.Add(20);
-            data.Add(30);
+            data.Add(24);
+            data.Add(28);
+            data.Add(32);
+            data.Add(36);
             data.Add(40);
-            data.Add(50);
+            data.Add(44);
+            data.Add(48);
+            data.Add(52);
+            data.Add(56);
             data.Add(60);
-            data.Add(70);
+            data.Add(64);
+            data.Add(68);
+            data.Add(72);
 
             // Get the ComboBox reference.
             var comboBox = sender as ComboBox;
@@ -90,11 +96,16 @@ namespace Mega_Escritorio_Tenille_Tisha
         {
             // Drop down List.
             List<int> data = new List<int>();
-            data.Add(10);
-            data.Add(20);
-            data.Add(30);
+            data.Add(24);
+            data.Add(28);
+            data.Add(32);
+            data.Add(36);
             data.Add(40);
-            data.Add(50);
+            data.Add(44);
+            data.Add(48);
+            data.Add(52);
+            data.Add(56);
+            data.Add(60);
 
             // Get the ComboBox reference.
             var comboBox = sender as ComboBox;

@@ -6,14 +6,15 @@
       xmlns:local="clr-namespace:Mega_Escritorio_Tenille_Tisha"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="700"
-      Title="Thank You">
+      Title="Thank You"
+      Background="WhiteSmoke">
 
     <Grid>
-        <Label x:Name="label" Content="Thank You For Your Business!!" HorizontalAlignment="Left" Margin="152,135,0,0" VerticalAlignment="Top" Height="64" Width="423" FontSize="29.333"/>
-        <Label x:Name="label1" Content="Your desk will arrive in ?? days!" HorizontalAlignment="Left" Margin="282,245,0,0" VerticalAlignment="Top" Height="46" Width="183" FontSize="16"/>
-        <Label x:Name="label2" Content="Your order was completed successfully." HorizontalAlignment="Left" Margin="281,217,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button x:Name="button" Content="Close Order Form" HorizontalAlignment="Left" Margin="263,324,0,0" VerticalAlignment="Top" Width="158" Height="31"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="72" Margin="196,204,0,0" VerticalAlignment="Top" Width="95" Source="Images/Antu_task-complete.png"/>
+        <Label x:Name="label" Content="Thank You For Your Business!!" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="64" Width="423" FontSize="29.333" Margin="169,315,108,321"/>
+        <Label x:Name="label1" Content="Your desk will arrive in ?? days!" HorizontalAlignment="Left" Margin="254,238,0,0" VerticalAlignment="Top" Height="46" Width="184" FontSize="16"/>
+        <Label x:Name="label2" Content="Your order was completed successfully." HorizontalAlignment="Left" Margin="254,197,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="button" Content="Close Order Form" HorizontalAlignment="Left" Margin="288,557,0,0" VerticalAlignment="Top" Width="170" Height="50" BorderThickness="5"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="72" Margin="168,197,0,0" VerticalAlignment="Top" Width="96" Source="Images/Antu_task-complete.png"/>
 
 
 

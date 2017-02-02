@@ -6,13 +6,15 @@
       xmlns:local="clr-namespace:Mega_Escritorio_Tenille_Tisha"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="700"
-      Title="Mega Escritorio - Home">
+      Title="Mega Escritorio - Home"
+      Background="WhiteSmoke">
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="Images/desk-chair.png" Opacity="0.6"/>
+            <ImageBrush ImageSource="Images/desk-chair.png" />
         </Grid.Background>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="106" Margin="85,51,0,0" TextWrapping="Wrap" Text="Welcome to Tenille &amp; Tisha's Custom Desk Application" VerticalAlignment="Top" Width="514" FontFamily="Segoe UI Black" FontSize="32" TextAlignment="Center" IsReadOnly="True"/>
-        <Button x:Name="button" Content="Get Started!" HorizontalAlignment="Left" Margin="264,448,0,0" VerticalAlignment="Top" Width="168" Height="45" Click="button_Click" FontSize="16"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="106" Margin="0,587,0,0" TextWrapping="Wrap" Text="Tenille &amp; Tisha's Custom Desk Application" VerticalAlignment="Top" Width="700" FontFamily="Legacy Sans ITC Pro Book" FontSize="24" TextAlignment="Center" IsReadOnly="True" Background="Transparent"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="136" Margin="-10,0,0,0" TextWrapping="Wrap" Text="Welcome" VerticalAlignment="Top" Width="700" FontFamily="Lucida Handwriting" FontSize="72" TextAlignment="Center" IsReadOnly="True" Background="Transparent" FontWeight="Bold"/>
+        <Button x:Name="button" Content="Get Started!" HorizontalAlignment="Left" Margin="277,505,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="button_Click" FontSize="16" Background="Honeydew" BorderThickness="5"/>
     </Grid>
 </Page>

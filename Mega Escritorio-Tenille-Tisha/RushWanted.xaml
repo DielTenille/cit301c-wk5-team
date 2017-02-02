@@ -6,12 +6,13 @@
       xmlns:local="clr-namespace:Mega_Escritorio_Tenille_Tisha"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="700"
-      Title="RushWanted">
+      Title="RushWanted"
+      Background="WhiteSmoke">
 
     <Grid>
-        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="504,432,0,0" VerticalAlignment="Top" Width="100" Click="button_Click" FontSize="16" Height="39" RenderTransformOrigin="0.478,0.456"/>
-        <RadioButton x:Name="radioButton" Content="Yes" HorizontalAlignment="Left" Margin="266,296,0,0" VerticalAlignment="Top" FontSize="16" Click="rushWanted_Loaded"/>
-        <RadioButton x:Name="radioButton1" Content="No" HorizontalAlignment="Left" Margin="383,296,0,0" VerticalAlignment="Top" FontSize="16" Click="rushWanted_Loaded"/>
-        <TextBox x:Name="label" Text="Do You Want Rush Order Shipping?" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="100,73,0,0" VerticalAlignment="Top" Height="87" Width="504" FontSize="24" FontWeight="Bold" BorderThickness="0"/>
+        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="288,557,0,0" VerticalAlignment="Top" Width="170" Click="button_Click" FontSize="16" Height="50" RenderTransformOrigin="0.478,0.456" Background="Honeydew" BorderThickness="5"/>
+        <RadioButton x:Name="radioButton" Content="Yes" HorizontalAlignment="Left" Margin="264,225,0,0" VerticalAlignment="Top" FontSize="16" Click="rushWanted_Loaded"/>
+        <RadioButton x:Name="radioButton1" Content="No" HorizontalAlignment="Left" Margin="361,225,0,0" VerticalAlignment="Top" FontSize="16" Click="rushWanted_Loaded"/>
+        <TextBox x:Name="label" Text="Do You Want Rush Order Shipping?" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top" Height="39" Width="700" FontSize="24" FontWeight="Bold" BorderThickness="0" Background="Transparent"/>
     </Grid>
 </Page>

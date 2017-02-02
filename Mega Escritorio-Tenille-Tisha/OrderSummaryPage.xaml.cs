@@ -61,19 +61,22 @@ namespace Mega_Escritorio_Tenille_Tisha
         }
         public static void savePriceQuoteToFile(double orderID, double baseDeskPrice, double materialPrice, double drawerPrice, double dimensionPrice, double rushOrderPrice, double totalPrice)
         {
-            //string json = JsonConvert.SerializeObject(new
-            //{
-            //    OrderID = orderID,
-            //    BaseDesk = baseDeskPrice,
-            //    Material = materialPrice,
-            //    Drawers = drawerPrice,
-            //    Dimension = dimensionPrice,
-            //    RushOrder = rushOrderPrice,
-            //    TotalPrice = totalPrice
-            //});
+            /*
+             * 
+             * string json = JsonConvert.SerializeObject(new
+            {
+                OrderID = orderID,
+                BaseDesk = baseDeskPrice,
+                Material = materialPrice,
+                Drawers = drawerPrice,
+                Dimension = dimensionPrice,
+                RushOrder = rushOrderPrice,
+                TotalPrice = totalPrice
+            });
 
-            ////write string to file
-            //System.IO.File.AppendAllText(@"C:\Users\t2alaska\cit301c\TenilleDiel_Mega-Escritorio-App\orders.txt", json);
+            //write string to file
+            System.IO.File.AppendAllText(@"C:\Users\t2alaska\cit301c\TenilleDiel_Mega-Escritorio-App\orders.txt", json);
+            */
         }
     }
 }
