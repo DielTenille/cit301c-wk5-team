@@ -18,6 +18,7 @@ namespace Mega_Escritorio_Tenille_Tisha
     /// <summary>
     /// Interaction logic for OrderSummaryPage.xaml
     /// </summary>
+    /// 
     public partial class OrderSummaryPage : Page
     {
         public OrderSummaryPage()
