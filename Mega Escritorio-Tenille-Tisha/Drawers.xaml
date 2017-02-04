@@ -6,18 +6,19 @@
       xmlns:local="clr-namespace:Mega_Escritorio_Tenille_Tisha"
       mc:Ignorable="d" 
       d:DesignHeight="700" d:DesignWidth="700"
-      Title="Drawers">
+      Title="Drawers"
+      Background="WhiteSmoke">
 
     <Grid>
-        <TextBox x:Name="label" Text="How Many Drawers Would You Like Your Desk to Have?" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="100,73,0,0" VerticalAlignment="Top" Height="87" Width="504" FontSize="24" FontWeight="Bold" BorderThickness="0"/>
-        <RadioButton x:Name="radioButton" Content="0" HorizontalAlignment="Left" Margin="284,254,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click" IsChecked="True"/>
-        <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" Margin="284,291,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
-        <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Left" Margin="284,334,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
-        <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Left" Margin="284,371,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
-        <RadioButton x:Name="radioButton4" Content="4" HorizontalAlignment="Left" Margin="382,254,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
-        <RadioButton x:Name="radioButton5" Content="5" HorizontalAlignment="Left" Margin="382,291,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
-        <RadioButton x:Name="radioButton6" Content="6" HorizontalAlignment="Left" Margin="382,334,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
-        <RadioButton x:Name="radioButton7" Content="7" HorizontalAlignment="Left" Margin="382,371,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
-        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="477,478,0,0" VerticalAlignment="Top" Width="116" Click="button_Click" Height="38" FontSize="16"/>
+        <TextBox x:Name="label" Text="How Many Drawers Would You Like Your Desk to Have?" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top" Height="37" Width="700" FontSize="24" FontWeight="Bold" BorderThickness="0" Background="Transparent" TextChanged="label_TextChanged"/>
+        <RadioButton x:Name="radioButton" Content="0" HorizontalAlignment="Left" BorderThickness="3" Margin="284,225,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" BorderThickness="3" Margin="284,251,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Left" BorderThickness="3" Margin="284,277,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Left" BorderThickness="3" Margin="284,303,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton4" Content="4" HorizontalAlignment="Left" BorderThickness="3" Margin="382,225,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton5" Content="5" HorizontalAlignment="Left" BorderThickness="3" Margin="382,251,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton6" Content="6" HorizontalAlignment="Left" BorderThickness="3" Margin="382,277,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton7" Content="7" HorizontalAlignment="Left" BorderThickness="3" Margin="382,303,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="288,557,0,0" VerticalAlignment="Top" Width="170" Click="button_Click" Height="50" FontSize="16" Background="Honeydew" BorderThickness="5"/>
     </Grid>
 </Page>

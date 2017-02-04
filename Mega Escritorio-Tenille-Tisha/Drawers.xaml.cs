@@ -87,5 +87,15 @@ namespace Mega_Escritorio_Tenille_Tisha
             }
 
         }
+
+        private void radioButton7_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void label_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
