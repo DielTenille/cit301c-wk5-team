@@ -14,7 +14,7 @@
         <RadioButton x:Name="laminate" Content="Laminate" HorizontalAlignment="Left" BorderThickness="3" Margin="399,350,0,0" VerticalAlignment="Top" FontSize="16" Click="Load_Click"/>
         <RadioButton x:Name="pine" Content="Pine" HorizontalAlignment="Left" BorderThickness="3" Margin="399,486,0,0" VerticalAlignment="Top" FontSize="16" Click="Load_Click"/>
         <TextBox x:Name="label2" Text="Please Choose a Desk Material:"  TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="-23,73,-22,0" VerticalAlignment="Top" Height="39" Width="725" FontSize="24" FontWeight="Bold" BorderThickness="0" Background="Transparent" />
-        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="288,557,0,0" VerticalAlignment="Top" Width="170" Click="button_Click" Height="50" FontSize="16" Background="Honeydew" BorderThickness="5"/>
+        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="430,534,0,0" VerticalAlignment="Top" Width="170" Click="button_Click" Height="50" FontSize="16" Background="Honeydew" BorderThickness="5"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="100" Margin="288,150,0,0" VerticalAlignment="Top" Width="100" Source="Images/oak_sample.jpg"/>
         <Image x:Name="image1" HorizontalAlignment="Left" Height="100" Margin="288,275,0,0" VerticalAlignment="Top" Width="100" Source="Images/laminate-sample.jpg"/>
         <Image x:Name="image2" HorizontalAlignment="Left" Height="100" Margin="288,411,0,0" VerticalAlignment="Top" Width="100" Source="Images/pine-sample.jpg"/>

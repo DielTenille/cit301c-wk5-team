@@ -18,7 +18,7 @@
         <Label x:Name="width" Content="Desktop Width" HorizontalAlignment="Left" Margin="193,281,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="width2" Content="inches" HorizontalAlignment="Left" Margin="473,287,0,0" VerticalAlignment="Top"/>
 
-        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="288,557,0,0" VerticalAlignment="Top" Width="170" Click="button_Click" Height="50" FontSize="16" Background="Honeydew" BorderThickness="5"/>
+        <Button x:Name="button" Content="Continue" HorizontalAlignment="Left" Margin="433,418,0,0" VerticalAlignment="Top" Width="170" Click="button_Click" Height="50" FontSize="16" Background="Honeydew" BorderThickness="5"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="342,225,0,0" VerticalAlignment="Top" Width="120" Loaded="comboBox_Loaded1" SelectionChanged="comboBox_SelectionChanged1" FontSize="20" BorderThickness="3" MinWidth="120" MinHeight="30"/>
         <ComboBox x:Name="comboBox_Copy" HorizontalAlignment="Left" Margin="342,281,0,0" VerticalAlignment="Top" Width="120" Loaded="comboBox_Loaded2" SelectionChanged="comboBox_SelectionChanged2" FontSize="20" BorderThickness="3" Padding="6,3" MinWidth="120" MinHeight="30"/>
 
