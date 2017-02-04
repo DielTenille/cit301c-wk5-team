@@ -27,6 +27,7 @@ namespace Mega_Escritorio_Tenille_Tisha
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            Console.WriteLine("Get started button clicked.");
             // View DeskMaterial.xaml  
             DeskMaterials deskMaterialsPage = new DeskMaterials();
             this.NavigationService.Navigate(deskMaterialsPage);

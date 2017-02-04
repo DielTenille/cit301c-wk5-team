@@ -9,9 +9,9 @@
       Title="Rush Order Options">
 
     <Grid>
-        <RadioButton x:Name="radioButton" Content="3 - Days" HorizontalAlignment="Left" Margin="188,266,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <RadioButton x:Name="radioButton1" Content="5 - Days" HorizontalAlignment="Left" Margin="314,266,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <RadioButton x:Name="radioButton2" Content="7 - Days" HorizontalAlignment="Left" Margin="434,266,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <RadioButton x:Name="radioButton3" Content="3 - Days" HorizontalAlignment="Left" Margin="188,266,0,0" VerticalAlignment="Top" FontSize="16" Click="radioButton_Click" IsChecked="True"/>
+        <RadioButton x:Name="radioButton5" Content="5 - Days" HorizontalAlignment="Left" Margin="314,266,0,0" VerticalAlignment="Top" FontSize="16" Click="radioButton_Click"/>
+        <RadioButton x:Name="radioButton7" Content="7 - Days" HorizontalAlignment="Left" Margin="434,266,0,0" VerticalAlignment="Top" FontSize="16" Click="radioButton_Click"/>
         <TextBox x:Name="label" Text="Choose Your Shipping Time:" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="100,73,0,0" VerticalAlignment="Top" Height="87" Width="504" FontSize="24" FontWeight="Bold" BorderThickness="0"/>
         <Button x:Name="button1" Content="See Quote!" HorizontalAlignment="Left" Margin="462,426,0,0" VerticalAlignment="Top" Width="118" Click="getQuote" Height="47" FontSize="16"/>
     </Grid>

@@ -34,8 +34,11 @@ namespace Mega_Escritorio_Tenille_Tisha
             this.NavigationService.Navigate(rushOrderPage);
             } else
             {
-            // View OrderSummaryPage.xaml  
-            OrderSummaryPage orderSummary = new OrderSummaryPage();
+                DeskOrder desk = (DeskOrder)Application.Current.Properties["Desk"];
+                desk.rushOrderPrice = 0;
+
+                // View OrderSummaryPage.xaml  
+                OrderSummaryPage orderSummary = new OrderSummaryPage();
             this.NavigationService.Navigate(orderSummary);
             }
         }

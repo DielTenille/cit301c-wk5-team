@@ -40,6 +40,11 @@ namespace Mega_Escritorio_Tenille_Tisha
         {
             int drawerPrice = 50;
             drawerSelectionPrice = drawerPrice * numDrawers;
+            Console.WriteLine("Drawer Price: " + drawerSelectionPrice);
+
+            DeskOrder desk = (DeskOrder)Application.Current.Properties["Desk"];
+            desk.drawerPrice = drawerSelectionPrice;
+            desk.numDrawers = numDrawers;
 
         }
 

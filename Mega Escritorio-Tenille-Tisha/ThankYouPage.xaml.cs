@@ -24,5 +24,10 @@ namespace Mega_Escritorio_Tenille_Tisha
         {
             InitializeComponent();
         }
+
+        private void close_Program(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

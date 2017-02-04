@@ -40,12 +40,15 @@ namespace Mega_Escritorio_Tenille_Tisha
             if (oak.IsChecked == true)
             {
                 materialChosen = 0;
+                Console.WriteLine("Oak was chosen.");
             } else if (laminate.IsChecked == true)
             {
                 materialChosen = 1;
+                Console.WriteLine("Laminate was chosen.");
             } else if (pine.IsChecked == true)
             {
                 materialChosen = 2;
+                Console.WriteLine("Pine was chosen.");
             } else
             {
                 MessageBox.Show("Please select a desk material!");
@@ -61,6 +64,12 @@ namespace Mega_Escritorio_Tenille_Tisha
             };                 
            
             double materialSelectionPrice = materialTypePrice[materialChosen];
+            Console.WriteLine("Material Price: " + materialSelectionPrice);
+
+            DeskOrder desk = new DeskOrder();
+            Application.Current.Properties["Desk"] = desk;
+            desk.materialPrice = materialSelectionPrice;
+        
 
         }
     }

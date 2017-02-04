@@ -10,7 +10,7 @@
 
     <Grid>
         <TextBox x:Name="label" Text="How Many Drawers Would You Like Your Desk to Have?" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="100,73,0,0" VerticalAlignment="Top" Height="87" Width="504" FontSize="24" FontWeight="Bold" BorderThickness="0"/>
-        <RadioButton x:Name="radioButton" Content="0" HorizontalAlignment="Left" Margin="284,254,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
+        <RadioButton x:Name="radioButton" Content="0" HorizontalAlignment="Left" Margin="284,254,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click" IsChecked="True"/>
         <RadioButton x:Name="radioButton1" Content="1" HorizontalAlignment="Left" Margin="284,291,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
         <RadioButton x:Name="radioButton2" Content="2" HorizontalAlignment="Left" Margin="284,334,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
         <RadioButton x:Name="radioButton3" Content="3" HorizontalAlignment="Left" Margin="284,371,0,0" VerticalAlignment="Top" FontSize="16" Click="drawerSelection_Click"/>
