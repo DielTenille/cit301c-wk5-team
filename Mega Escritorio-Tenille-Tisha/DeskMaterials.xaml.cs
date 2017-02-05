@@ -13,11 +13,19 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+enum MaterialPrice
+{
+    oak,
+    laminate,
+    pine
+   }
+
 namespace Mega_Escritorio_Tenille_Tisha
 {
     /// <summary>
     /// Interaction logic for DeskMaterials.xaml
     /// </summary>
+    
     public partial class DeskMaterials : Page
     {
         public double materialSelectionPrice;
@@ -39,15 +47,15 @@ namespace Mega_Escritorio_Tenille_Tisha
         {
             if (oak.IsChecked == true)
             {
-                materialChosen = 0;
+                materialChosen = (int)MaterialPrice.oak;
                 Console.WriteLine("Oak was chosen.");
             } else if (laminate.IsChecked == true)
             {
-                materialChosen = 1;
+                materialChosen = (int)MaterialPrice.laminate;
                 Console.WriteLine("Laminate was chosen.");
             } else if (pine.IsChecked == true)
             {
-                materialChosen = 2;
+                materialChosen = (int)MaterialPrice.pine;
                 Console.WriteLine("Pine was chosen.");
             } else
             {
@@ -58,6 +66,8 @@ namespace Mega_Escritorio_Tenille_Tisha
 
         public void calculateMaterialPrice()
         {
+            
+
             double[] materialTypePrice = new double[]
             {
                 200, 100, 50

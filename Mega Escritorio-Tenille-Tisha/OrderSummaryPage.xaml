@@ -10,10 +10,17 @@
       Background="WhiteSmoke">
 
     <Grid>
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="336" Margin="171,131,0,0" VerticalAlignment="Top" Width="360" BorderThickness="8" Background="White"/>
         <TextBox x:Name="label" Text="Your Custom Desk Quote" TextWrapping="Wrap" TextAlignment="Center" IsReadOnly="True" HorizontalAlignment="Left" Margin="0,73,0,0" VerticalAlignment="Top" Height="37" Width="700" FontSize="24" FontWeight="Bold" Background="Transparent" BorderThickness="0"/>
         <Button x:Name="button" Content="Start Over" HorizontalAlignment="Left" Margin="171,514,0,0" Width="170" Click="startOver" FontSize="16" Height="50" Background="Honeydew" BorderThickness="7" VerticalAlignment="Top"/>
         <Button x:Name="button1" Content="Order Now!" HorizontalAlignment="Left" Margin="361,514,0,0" VerticalAlignment="Top" Width="170" Click="completeOrder" FontSize="16" Height="50" Background="Honeydew" BorderThickness="7"/>
+        <Rectangle Fill="#FFFFFF" Stroke="SlateGray" StrokeThickness= "8"  HorizontalAlignment="Left" Height="336" Margin="124,131,0,0" VerticalAlignment="Top" Width="459"/>
+        <Label x:Name="orderNumber" Content="Label" HorizontalAlignment="Left" Margin="200,170,0,0" VerticalAlignment="Top" FontSize="21.333" FontWeight="Bold"/>
+        <Label x:Name="baseCost" Content="Label" HorizontalAlignment="Left" Margin="230,210,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="materialCost" Content="Label" HorizontalAlignment="Left" Margin="230,230,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="drawerCost" Content="Label" HorizontalAlignment="Left" Margin="230,250,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="extraLargeCost" Content="Label" HorizontalAlignment="Left" Margin="230,270,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="rushCost" Content="Label" HorizontalAlignment="Left" Margin="230,290,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="totalCost" Content="Label" HorizontalAlignment="Left" Margin="150,344,0,0" VerticalAlignment="Top" FontSize="18.667" FontWeight="Bold"/>
 
     </Grid>
 </Page>

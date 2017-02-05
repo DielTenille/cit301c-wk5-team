@@ -35,20 +35,47 @@ namespace Mega_Escritorio_Tenille_Tisha
             this.NavigationService.Navigate(homePage);
         }
 
-        private void completeOrder(object sender, RoutedEventArgs e)
+        public void populate_Form()
+        {
+
+            DeskOrder desk = (DeskOrder)Application.Current.Properties["Desk"];
+            double materialPrice = desk.materialPrice;
+            double drawerPrice = desk.drawerPrice;
+            double dimensionPrice = desk.dimensionPrice;
+            double rushOrderPrice = desk.rushOrderPrice;
+
+            //Create random order ID
+            Random rand = new Random();
+            int orderID = rand.Next();
+
+            double totalPrice = BASE_DESK_PRICE + materialPrice + drawerPrice + dimensionPrice + rushOrderPrice;
+
+            //Add Total Price Quote to DeskOrder object
+            desk.priceQuote = totalPrice;
+
+            //Add order ID to DeskOrder object
+            desk.orderID = orderID;
+
+            orderNumber.Content = "Order ID: #" + orderID;
+            baseCost.Content = "Base Desk Price: $" + BASE_DESK_PRICE;
+            materialCost.Content = " Desk Material Price: $" + materialPrice;
+            drawerCost.Content = " Desk Drawer Price: $" + drawerPrice;
+            extraLargeCost.Content = " Extra Large Surface Area Price: $" + dimensionPrice;
+            rushCost.Content = " Rush Order Price: $" + rushOrderPrice;
+            totalCost.Content = "*****  Total Custom Desk Price: $" + totalPrice + "  *****";
+
+        }
+
+        public void completeOrder(object sender, RoutedEventArgs e)
         {
             DeskOrder desk = (DeskOrder)Application.Current.Properties["Desk"];
             double materialPrice = desk.materialPrice;
             double drawerPrice = desk.drawerPrice;
             double dimensionPrice = desk.dimensionPrice;
             double rushOrderPrice = desk.rushOrderPrice;
-           
-            //Create random order ID
-            Random rand = new Random();
-            int orderID = rand.Next();
+            double totalPrice = desk.priceQuote;
+            int orderID = desk.orderID;
 
-            //Add order ID to DeskOrder object
-            desk.orderID = orderID;
 
             //Write to console for debugging (Use as template for adding to list element
             Console.WriteLine("\n Order ID: #" + orderID);
@@ -57,12 +84,7 @@ namespace Mega_Escritorio_Tenille_Tisha
             Console.WriteLine(" Desk Drawer Price: $" + drawerPrice);
             Console.WriteLine(" Extra Large Surface Area Price: $" + dimensionPrice);
             Console.WriteLine(" Rush Order Price: $" + rushOrderPrice);
-
-            double totalPrice = BASE_DESK_PRICE + materialPrice + drawerPrice + dimensionPrice + rushOrderPrice;
             Console.WriteLine("\n *****  Total Custom Desk Price: $" + totalPrice + "  *****");
-
-            //Add Total Price Quote to DeskOrder object
-            desk.priceQuote = totalPrice;
 
             // View ThankYouPage.xaml  
             ThankYouPage thankYouPage = new ThankYouPage();
@@ -72,6 +94,7 @@ namespace Mega_Escritorio_Tenille_Tisha
             savePriceQuoteToFile(orderID, BASE_DESK_PRICE, materialPrice, drawerPrice, dimensionPrice, rushOrderPrice, totalPrice);
         }
 
+       
         public static void savePriceQuoteToFile(double orderID, double baseDeskPrice, double materialPrice, double drawerPrice, double dimensionPrice, double rushOrderPrice, double totalPrice)
         {
             string json = JsonConvert.SerializeObject(new

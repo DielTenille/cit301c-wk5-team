@@ -13,6 +13,18 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
+enum DrawerCount
+{
+    zero,
+    one,
+    two,
+    three,
+    four,
+    five,
+    six,
+    seven
+}
 namespace Mega_Escritorio_Tenille_Tisha
 {
     /// <summary>
@@ -52,35 +64,35 @@ namespace Mega_Escritorio_Tenille_Tisha
         {
             if(radioButton.IsChecked == true)
             {
-                numDrawers = 0;
+                numDrawers = (int)DrawerCount.zero;
             }
             else if (radioButton1.IsChecked == true)
             {
-                numDrawers = 1;
+                numDrawers = (int)DrawerCount.one;
             }
             else if (radioButton2.IsChecked == true)
             {
-                numDrawers = 2;
+                numDrawers = (int)DrawerCount.two;
             }
             else if (radioButton3.IsChecked == true)
             {
-                numDrawers = 3;
+                numDrawers = (int)DrawerCount.three;
             }
             else if (radioButton4.IsChecked == true)
             {
-                numDrawers = 4;
+                numDrawers = (int)DrawerCount.four;
             }
             else if (radioButton5.IsChecked == true)
             {
-                numDrawers = 5;
+                numDrawers = (int)DrawerCount.five;
             }
             else if (radioButton6.IsChecked == true)
             {
-                numDrawers = 6;
+                numDrawers = (int)DrawerCount.six;
             }
             else if (radioButton7.IsChecked == true)
             {
-                numDrawers = 7;
+                numDrawers = (int)DrawerCount.seven;
             } else
             {
                 MessageBox.Show("Please make a selection!");

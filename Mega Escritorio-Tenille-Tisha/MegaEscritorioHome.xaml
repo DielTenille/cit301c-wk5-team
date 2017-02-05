@@ -14,7 +14,7 @@
             <ImageBrush ImageSource="Images/desk-chair.png" />
         </Grid.Background>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="44" Margin="0,587,0,0" TextWrapping="Wrap" Text="Tenille &amp; Tisha's Custom Desk Application" VerticalAlignment="Top" Width="700" FontFamily="Legacy Sans ITC Pro Book" FontSize="24" TextAlignment="Center" IsReadOnly="True" Background="Transparent"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="83" TextWrapping="Wrap" Text="Welcome" VerticalAlignment="Top" Width="700" FontFamily="Lucida Handwriting" FontSize="72" TextAlignment="Center" IsReadOnly="True" Background="Transparent" FontWeight="Bold"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="74" TextWrapping="Wrap" Text="Welcome" VerticalAlignment="Top" Width="700" FontFamily="Lucida Handwriting" FontSize="72" TextAlignment="Center" IsReadOnly="True" Background="Transparent" FontWeight="Bold"/>
         <Button x:Name="button" Content="Get Started!" HorizontalAlignment="Left" Margin="259,478,0,0" VerticalAlignment="Top" Width="170" Height="50" Click="button_Click" FontSize="16" Background="Honeydew" BorderThickness="5"/>
     </Grid>
 </Page>

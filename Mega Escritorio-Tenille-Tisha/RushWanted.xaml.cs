@@ -39,7 +39,8 @@ namespace Mega_Escritorio_Tenille_Tisha
 
                 // View OrderSummaryPage.xaml  
                 OrderSummaryPage orderSummary = new OrderSummaryPage();
-            this.NavigationService.Navigate(orderSummary);
+                orderSummary.populate_Form();
+                this.NavigationService.Navigate(orderSummary);
             }
         }
 

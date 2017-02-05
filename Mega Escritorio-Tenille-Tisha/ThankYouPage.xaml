@@ -10,10 +10,9 @@
       Background="WhiteSmoke">
 
     <Grid>
-        <Label x:Name="label" Content="Thank You For Your Business!!" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="64" Width="423" FontSize="29.333" Margin="156,153,121,483"/>
-        <Label x:Name="label1" Content="Your desk will arrive in ?? days!" HorizontalAlignment="Left" Margin="242,295,0,0" VerticalAlignment="Top" Height="46" Width="184" FontSize="16"/>
-        <Label x:Name="label2" Content="Your order was completed successfully." HorizontalAlignment="Left" Margin="242,254,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <Button x:Name="button" Content="Close Order Form" HorizontalAlignment="Left" Margin="254,420,0,0" VerticalAlignment="Top" Width="170" Height="50" BorderThickness="5"/>
+        <Label x:Name="label" Content="Thank You For Your Business!!" HorizontalAlignment="Center"  VerticalAlignment="Top" Height="64" Width="423" FontSize="29.333" Margin="156,161,121,0"/>
+        <Label x:Name="label2" Content="Your order was completed successfully." HorizontalAlignment="Left" Margin="252,274,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="button" Content="Close Order Form" HorizontalAlignment="Left" Margin="256,369,0,0" VerticalAlignment="Top" Width="170" Height="50" BorderThickness="5" Click="close_Program"/>
         <Image x:Name="image" HorizontalAlignment="Left" Height="72" Margin="156,254,0,0" VerticalAlignment="Top" Width="96" Source="Images/Antu_task-complete.png"/>
 
 
